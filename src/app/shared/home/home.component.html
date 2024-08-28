@@ -1,79 +1,49 @@
-<!-- Home Section -->
-<div class="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden HomeTop">
-    <div class="flex flex-col items-center justify-center text-center px-8 h-full transition-colors duration-500 bg-black bg-opacity-20 dark:bg-opacity-40">
-        <img src="images/HomeImage.jpg" alt="Roland Moons" class="w-64 h-64 md:w-96 md:h-96 rounded-full border-4 border-white shadow-lg -mt-20">
-        <h1 class="text-white text-3xl md:text-5xl font-bold mt-6">
-            Roland Moons
-        </h1>
-        <h3 class="text-white text-xl md:text-2xl mt-2">Developer Portfolio</h3>
-        <svg class="arrows mt-5" (click)="scrollToSection(about)">
-            <path class="a1" d="M0 0 L30 32 L60 0" stroke="white" stroke-width="2"></path>
-            <path class="a2" d="M0 20 L30 52 L60 20" stroke="white" stroke-width="2"></path>
-            <path class="a3" d="M0 40 L30 72 L60 40" stroke="white" stroke-width="2"></path>
-        </svg>
-    </div>
-    <div class="absolute bottom-0 right-0 p-2 text-white text-xs bg-black bg-opacity-50 rounded-tl-lg">
-        Background by <a href="https://www.pixiv.net/en/artworks/108917295" class="underline" target="_blank">高广月</a>
-    </div>
+<div class="main-container relative overflow-hidden">
+    <!-- Home Section -->
+    <div class="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden HomeTop">
+        <div class="flex flex-col items-center justify-center px-8 h-full transition-colors duration-500 bg-black bg-opacity-60 dark:bg-opacity-65 text-white">
+            <div class="py-8"> 
+                <div class="container mx-auto px-8 md:px-16 flex flex-col md:flex-row items-center">
+                    <!-- Image Section -->
+                    <div class="md:w-1/4 flex justify-center md:justify-end mt-8 md:mt-0">
+                        <img src="images/SnekGhosta.png" alt="Snek ghosta" class="w-64 h-auto transform rotate-12">
+                        
+                    </div>
+                    <!-- Text Section -->
+                    <div class="md:w-3/4">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-3">Hey!</h2>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-3">I'm <span class="text-purple-500 dark:text-violet-500">Roland Moons</span>,</h3>
+                        <p class="text-lg md:text-xl mb-8">
+                            A passionate developer focused on creating impactful software solutions.<br/>
+                            With experience in various programming languages and frameworks, I excel at bringing ideas to life through code.<br/>
+                            My love for technology is matched by my interests in electronics and music, which inspire my creativity and problem-solving skills.<br/>
+                            I like to develop software that not only solves problems but is also fun to use.<br/>
+                        </p>
+                        <a class="inline-block bg-purple-500 dark:bg-violet-500 text-white py-3 px-6 rounded-lg shadow-xl hover:bg-purple-600 dark:hover:bg-violet-600">View My Work</a>
+                    </div>
+                </div>
+            </div>
+            <svg class="arrows mt-5" (click)="scrollToSection(about)">
+                <path class="a1" d="M0 0 L30 32 L60 0" stroke="white" stroke-width="2"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20" stroke="white" stroke-width="2"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40" stroke="white" stroke-width="2"></path>
+            </svg>
+        </div>
+        <div class="absolute bottom-0 right-0 p-2 text-white text-xs bg-black bg-opacity-50 rounded-tl-lg">
+            Background by mom
+        </div>
+    </div> 
+    
+    
+
+
+
+    <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 </div>
 
-<!-- About Section -->
-<div #about class="py-16 bg-slate-100 dark:bg-slate-900 dark:text-white text-center">
-    <div class="container mx-auto px-8 md:px-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
-        <p class="text-lg md:text-xl mb-8">
-            I'm Roland Moons, a passionate developer with a focus on creating impactful software solutions. With experience in various programming languages and frameworks, I bring ideas to life through code.
-        </p>
-        <a href="#portfolio" class="inline-block bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600">View My Work</a>
-    </div>
-</div>
-
-<!-- About Section -->
-<section id="about" class="py-16 bg-slate-100 dark:bg-slate-900 dark:text-white text-center">
-    <div class="container mx-auto px-8 md:px-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
-        <p class="text-lg md:text-xl mb-8">
-            I'm Roland Moons, a passionate developer with a focus on creating impactful software solutions. With experience in various programming languages and frameworks, I bring ideas to life through code.
-        </p>
-        <a href="#portfolio" class="inline-block bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600">View My Work</a>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="py-16 bg-slate-100 dark:bg-slate-900 dark:text-white text-center">
-    <div class="container mx-auto px-8 md:px-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
-        <p class="text-lg md:text-xl mb-8">
-            I'm Roland Moons, a passionate developer with a focus on creating impactful software solutions. With experience in various programming languages and frameworks, I bring ideas to life through code.
-        </p>
-        <a href="#portfolio" class="inline-block bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600">View My Work</a>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="py-16 bg-slate-100 dark:bg-slate-900 dark:text-white text-center">
-    <div class="container mx-auto px-8 md:px-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
-        <p class="text-lg md:text-xl mb-8">
-            I'm Roland Moons, a passionate developer with a focus on creating impactful software solutions. With experience in various programming languages and frameworks, I bring ideas to life through code.
-        </p>
-        <a href="#portfolio" class="inline-block bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600">View My Work</a>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="py-16 bg-slate-100 dark:bg-slate-900 dark:text-white text-center">
-    <div class="container mx-auto px-8 md:px-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
-        <p class="text-lg md:text-xl mb-8">
-            I'm Roland Moons, a passionate developer with a focus on creating impactful software solutions. With experience in various programming languages and frameworks, I bring ideas to life through code.
-        </p>
-        <a href="#portfolio" class="inline-block bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600">View My Work</a>
-    </div>
-</section>
 
 <!-- Portfolio Section -->
-<section id="portfolio" class="py-16 bg-gray-900 text-center">
+<div #about id="portfolio" class="py-16 text-center">
     <div class="container mx-auto px-8 md:px-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">Portfolio</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -106,4 +76,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>

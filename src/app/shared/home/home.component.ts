@@ -10,6 +10,8 @@ export class HomeComponent {
   constructor() {}
   
   scrollToSection(div: HTMLDivElement): void {
-    div.scrollIntoView({ behavior: 'smooth' });
-  }
+    const offset = 64;
+    const topPosition = div.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: topPosition, behavior: 'smooth' });
+}
 }
