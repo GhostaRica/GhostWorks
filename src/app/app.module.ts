@@ -3,22 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { HomeComponent } from './shared/home/home.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { HomeComponent } from './features/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     HomeComponent,
-    FooterComponent
   ],
   imports: [
+    CoreModule,
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
