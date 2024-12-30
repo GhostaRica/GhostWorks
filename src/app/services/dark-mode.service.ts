@@ -20,6 +20,8 @@ export class DarkModeService {
   }
 
   toggleTheme() {
+    console.log("toggle is being called")
+
     if (document.documentElement.classList.contains('dark')) {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
