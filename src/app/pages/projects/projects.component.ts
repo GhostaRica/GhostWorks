@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-projects',
-    imports: [NavbarComponent],
+    imports: [CommonModule],
     templateUrl: './projects.component.html',
     styleUrl: './projects.component.css'
 })
