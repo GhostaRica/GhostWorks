@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { AnchorButtonComponent } from '../../components/ui/anchor-button/anchor-button.component';
 
 @Component({
     selector: 'app-home',
-    imports: [],
+    imports: [AnchorButtonComponent],
     templateUrl: './home.component.html',
     styleUrl: './home.component.css'
 })
